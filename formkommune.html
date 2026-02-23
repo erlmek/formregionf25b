@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Region</title>
+  <title>Kommune</title>
   <link rel="stylesheet" href="css/formstyle.css">
 </head>
 <body>
-<h1>Insert region</h1>
+<h1>Insert kommune</h1>
 
 <div class="form-container">
-  <form id="formRegion">
+  <form id="formKommune">
     <div class="form-group">
       <label for="inpCode">Kode</label>
       <input
@@ -40,10 +40,14 @@
               id="inpHref"
               required>
     </div>
+    <div class="form-group">
+      <label class="form-lab" for="ddRegioner">Region</label>
+      <select name="regionkode" id="ddRegioner"></select>
+    </div>
     <button type=”submit” title="Gem">Opret</button>
   </form>
 </div>
 
 </body>
-<script src="js/formregion.js"></script>
+<script src="js/formkommune.js"></script>
 </html>
