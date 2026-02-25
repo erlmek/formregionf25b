@@ -59,8 +59,8 @@ async function handleFormSubmit(event) {
         const formData = new FormData(formKommune);
         console.log(formData);
         const plainFormData = Object.fromEntries(formData.entries());
-        //plainFormData.region = {}
-        //plainFormData.region.kode = "3457"
+        plainFormData.region = {}
+        plainFormData.region.kode = plainFormData.regionKode
         const responseData = await postObjectAsJson(urlPostKommune, plainFormData, "POST");
         console.log(responseData);
     } catch (error) {
