@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Kommuner</title>
+    <link rel="stylesheet" href="css/tablestyle.css">
 </head>
 <body>
 <button id="pbGetKommuner">Hent Kommuner</button>
@@ -15,10 +16,30 @@
             <th>Kode</th>
             <th>Navn</th>
             <th>Href</th>
+            <th>Photo</th>
             <th>Region</th>
+            <th>Opdater</th>
+            <th>Slet</th>
         </tr>
     </table>
 </div>
+
+<dialog id="dlgUpdateKommune">
+    <h2>Opdater Kommune</h2>
+    <form id="frmUpdateKommune" method="dialog">
+        <label for="txtKode">Kode:</label>
+        <input type="text" id="txtKode" name="kode" readonly><br><br>
+        <label for="txtNavn">Navn:</label>
+        <input type="text" id="txtNavn" name="navn" required><br><br>
+        <label for="txtHref">Href:</label>
+        <input type="text" id="txtHref" name="href" required><br><br>
+        <label for="txtPhoto">Photo Href:</label>
+        <input type="text" id="txtPhoto" name="hrefPhoto"><br><br>
+        <button type="submit" id="btnUpdateSave">Gem</button>
+        <button type="button" id="btnUpdateCancel">Annuller</button>
+    </form>
+</dialog>
+
 <script type="module" src="js/kommunetable.js"></script>
 
 </body>

@@ -1,0 +1,50 @@
+table {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    height: 100%;
+    table-layout: fixed;
+}
+
+td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    color: red;
+}
+
+tr:nth-child(even) {
+    background-color: #e6f7ff;
+}
+
+tr:nth-child(odd) {
+    background-color: #f5f5f5;
+}
+
+.btn1 {
+    background-color: #8b0000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+dialog {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+dialog::backdrop {
+    background-color: rgba(0,0,0,0.5);
+}
+
+#frmUpdateKommune label {
+    display: inline-block;
+    width: 100px;
+}
